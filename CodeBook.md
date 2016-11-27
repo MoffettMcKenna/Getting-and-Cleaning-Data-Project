@@ -31,6 +31,12 @@ The relationships between the files dictated that several actions needed to occu
 2. Re-combine the test and train data into one set.
 3. The subject, Y, and X data was needed in one dataset, not spread out into multiple ones.
 First the data from the test and train sets were gathered into one dataset.  Then the feature list was transposed into the column names of the X data.  To meet the objectives of the project all the columns not containing data for Standard Deviation or Mean was then dropped out of the X.  Finally all the pieces were assembled left to right (subject, Y, X).
+To meet the second objective of the project this data is then subset by the volunteer id and activity.  Each of the features for the subsets was averaged and this was added to a new table of data.  This new table has one row per each unique (volunteer, activity) pair.
+
+## Processing Output
+There are two files created by the process above.
+FullResults.txt contains all of the original feature data.
+AverageResults.txt contains the averaged data.  A copy of this file is included in this project.
 
 ## Variable Definitions
 While the full list is presented below for completeness, the precise meaning of variables after the first two (which the original files refer to as features) is best understood by consulting the features_info.txt file.  But a summary of these names is reached by breaking them down into the following parts:
@@ -40,7 +46,9 @@ While the full list is presented below for completeness, the precise meaning of 
 * Axis - The XYZ direction the measurement was taken on.
 In some cases the function requires extra information.  In this case it is added to the end of the feature and seperated from the Axis by a comma. 
 So, to apply this to the first feature in the list, tBodyAcc-mean()-X, it is a measurement of BodyAcc along the X Axis over time and then passed into the mean() function.
+There are no units for any of the variables.  The Volunteer ID is between 1 and 30, and the Activity is one of either Walking, Going Up Stairs, Going Down Stairs, Seated, Standing, or Laying Down.  All the features were normalized to be between -1 and 1.
 
+### Variables
 - Volunteer - An unique id number assigned to each volunteer for the study.
 - Activity - Which of the activities the volunteer was performing when the feature data was gathered.
 - tBodyAcc-mean()-X
