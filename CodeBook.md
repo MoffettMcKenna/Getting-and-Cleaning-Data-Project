@@ -44,8 +44,11 @@ While the full list is presented below for completeness, the precise meaning of 
 * Measurement - The actual measurement taken.
 * Function - The processing function applied to that measurement.
 * Axis - The XYZ direction the measurement was taken on.
+
 In some cases the function requires extra information.  In this case it is added to the end of the feature and seperated from the Axis by a comma. 
+
 So, to apply this to the first feature in the list, tBodyAcc-mean()-X, it is a measurement of BodyAcc along the X Axis over time and then passed into the mean() function.
+
 There are no units for any of the variables.  The Volunteer ID is between 1 and 30, and the Activity is one of either Walking, Going Up Stairs, Going Down Stairs, Seated, Standing, or Laying Down.  All the features were normalized to be between -1 and 1.
 
 ### Variables
