@@ -55,7 +55,7 @@ While the full list is presented below for completeness, the precise meaning of 
 * Function - The processing function applied to that measurement.
 * Axis - The XYZ direction the measurement was taken on.
 
-In some cases the function requires extra information.  In this case it is added to the end of the feature and seperated from the Axis by a comma. 
+In some cases the function requires extra information.  In this case it is added to the end of the feature and separated from the Axis by a comma. 
 
 So, to apply this to the first feature in the list, tBodyAcc-mean()-X, it is a measurement of BodyAcc along the X Axis over time and then passed into the mean() function.
 
