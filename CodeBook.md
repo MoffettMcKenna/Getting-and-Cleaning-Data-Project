@@ -5,7 +5,7 @@
 The initial data consisted of data gathered as part of a study on using sensors (specifically those within a smartphone) to determine the activity people were engaged in at any given point.  The files presented were: 
 - activity_labels.txt - Definitions of numerical activity 
 - features_info.txt - Explanations of the features written by the original authors.
-- features.txt - Names of the 
+- features.txt - Names of the features.
 - README.txt - Explanation of the study and it's methods.
 - test Directory
   * subject_test.txt - List of the subject (a volunteer participating in the study) under observation.
