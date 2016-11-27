@@ -15,6 +15,8 @@ There are 4 functions in the run_analysis.R file.
 3. buildTable
 4. calcAverages
 
+Besides these functions, it also loads the dplyr library.  On most systems this will trigger a warning when the file is sourced.
+
 ### run_analysis()
 The main function is run_analysis.  This uses two calls to do it's job.  First it calls buildTable to get all the data cleaned and gathered into one data frame.  Then it calls calcAverages to get the table consisting of an average per (subject, activity) pair.  It will return this data frame.  After execution there will be two new files in the working directory, FullResults.txt and AverageResults.txt.
 
